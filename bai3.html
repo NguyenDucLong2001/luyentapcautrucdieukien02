@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<body>
+<form>
+    <label>Cạnh</label>
+    <p>
+        <input id="A" type="number"
+        oninput="count(this.value)"
+        onchange="count(this.value)">
+    </p>
+    <p>
+        <label>S</label>
+        <span id="S"></span>
+    </p>
+</form>
+<script>
+    function count(valum) {
+        valum = parseFloat(valum);
+        document.getElementById("S").innerHTML = valum*valum;
+    }
+</script>
+</body>
+</html>

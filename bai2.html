@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>Met</label>
+        <input id="M" type="number"
+        oninput="convert(this.value)"
+        onchange="convert(this.value)">
+    </p>
+    <p>
+        <label>Feet</label>
+        <span id="F"></span>
+    </p>
+</form>
+<script>
+function convert(valum) {
+    valum = parseFloat(valum);
+    document.getElementById("F").innerHTML =valum*3.2808;
+}
+</script>
+</body>
+</html>
